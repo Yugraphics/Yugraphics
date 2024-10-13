@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugraphics</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #f0f0f0;
+    }
+    
+    .header {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .header img{
+        width: fit-content;
+        height: 100px;
+    }
+    
+    .title {
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    
+    .sidebar {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    .sidebar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    
+    .sidebar li a:hover {
+        color: #f7e709;
+        border-bottom: 2px solid #f4f4f4;
+    }
+    
+    
+    .work-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+        background-color: #fff;
+    }
+    .work-item{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #000;
+        margin-top: -32px;
+        border-radius: 2px;
+    
+        
+    }
+    
+    .work-item1 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        color: #000;
+        border-radius: 2px;
+    }
+    
+    .about-section {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 50px;
+    }
+    
+    .footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    img{
+        width: 500px;
+        height: fit-content;
+    }
+    .work-container {
+        row-gap: 2rem;
+        display: inline;
+      }
+      .work-item {
+        box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+        border-radius: 0.5rem;
+      }
+      .work-item {
+        transition: 1s;
+      }
+      @media (max-width: 768px) {
+        .title {
+            font-size: 2em;
+        }
+
+        .sidebar {
+            flex-direction: column;
+        }
+
+        .sidebar a {
+            font-size: 1em;
+        }
+
+        .header {
+            padding: 10px;
+        }
+
+        .work-section {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+      </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Yugsraphics</h1>
+        <img src="assets/Logosmile.png" alt="">
+        <nav>
+            <ul class="sidebar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="work" class="work-section">
+        <div class="work-item">
+            <img src="assets/work4.jpg" alt="">
+        </div>
+        <div class="work-item1">
+            <img src="assets/work2.jpg" alt="">
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>Creative designer with a focus on unique, quality design solutions.</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Leovir Duron</p>
+    </footer>
+</body>
+</html>
